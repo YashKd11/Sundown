@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'monserrat';
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(Gilroy-ExtraBold.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 2vw;
+    font-family: 'monserrat';
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+}
+
+.page1 {
+    width: 100%;
+    position: relative;
+    background-color: rgb(246, 243, 235);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65vw;
+}
+
+#nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#nav2 button {
+    color: rgb(40, 39, 39);
+    background-color: rgb(238, 237, 227);
+    border: 1px solid rgb(191, 190, 190);
+    padding: 1.5vh 1.5vw;
+    border-radius: 50px;
+    font-size: 2vh;
+    transition: all  0.5s;
+}
+
+#nav1 img {
+    height: 14vh;
+    width: 10vw;
+}
+
+#nav2 button:hover {
+    background-color: black;
+    color: white;
+}
+
+.slogan {
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.slogan h1 {
+    font-family: 'gilroy';
+    font-size: 10vw;
+    font-weight: 800;
+    line-height: 130px;
+    position: relative;
+    z-index: 0;
+}
+
+.slogan h1:nth-child(2) {
+    margin-left: -80px;
+    z-index: 1;
+}
+
+.slogan :nth-child(3) {
+    margin-left: 110px;
+    z-index: 1;
+}
+
+.container .bubble {
+    height: 65vh;
+    width: 40vw;
+    background: linear-gradient(to top, #fe330a 0%,  #ff852b 100%);;
+    position: absolute;
+    top: 400px;
+    right: 500px;
+    z-index: 0;
+    filter: blur(13px);
+    border-radius: 50%;
+    animation: blob 15s infinite;
+}
+
+@keyframes blob {
+    0% {
+        top: 350px;
+        height: 65vh;
+        width: 35vw;
+    }
+
+    25% {
+        top: 350px;
+        height: 75vh;
+        width: 35vw;
+    }
+
+    50% {
+        top: 400px;
+        height: 65vh;
+        width: 40vw;
+    }
+
+    75% {
+        top: 370px;
+        height: 60vh;
+        width: 40vw;
+    }
+
+    100% {
+        top: 350px;
+        height: 65vh;
+        width: 40vw;
+    }
+}
+
+.panel {
+    height: 55vh;
+    width: 98.78vw;
+    margin-top: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel img {
+    height: 45vh;
+    width: 30vw;
+    border-radius: 5px;
+    margin: 7vh;
+    object-fit: cover;
+}
+
+.panel div {
+    width: 45%;
+    height: 100%;
+    margin: 20vh 10vh 8vh 8vh;
+    text-align: left;
+}
+
+.panel div p {
+    font-family: 'gilroy';
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.page2 {
+    height: 119.8vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(246,243,235),rgb(255,123,14));
+}
+
+.page2>div,
+.page3>div,
+.page4>div {
+    height: 23vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page2 div h1 ,
+.page3 div h1 {
+    font-size: 24vw;
+    font-family: 'gilroy';
+    font-weight: 700;
+}
+
+.page2 .info,
+.page3 .info,
+.page4 .info {
+    height: 50vh;
+    width: 95%;
+    margin: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page2 div p,
+.page3 .info div p,
+.page4 .info div p {
+    font-weight: 700;
+}
+
+.page2 div span,
+.page3 div span,
+.page4 div span {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'gilroy';
+    display: block;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(98, 96, 96);
+}
+
+.info div {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.page3,
+.page4 {
+    height: 120vh;
+    width: 100%;
+    background-color: rgb(255,123,14);
+}
+
+.page4 h1 {
+    font-size: 16vw;
+    font-weight: 700;
+}
+
+.workpanel {
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(255,123,14);
+    display: flex;
+    align-items: center;
+}
+
+.workpanel div {
+    height: 90%;
+    width: 25%;
+    padding: 20px;
+    border-left: 1px solid rgb(98, 96, 96);
+    overflow: hidden;
+}
+
+.workpanel div img {
+    height: 12vh;
+    width: 8vw;
+    object-fit: contain;
+}
+
+.workpanel div p,
+.wrap p {
+    font-size: 2vh;
+}
+
+#footer {
+    height: 100vh;
+    width: 98.9vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.tran .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap p ,
+.wrap h3,
+#footer .foot p{
+    color:white;
+}
+
+.wrap div {
+    margin: 5vh;
+}
+
+.temp {
+    height: 100vh;
+    width: 100%;
+}
+
+.tran {
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(140deg,#fe330a ,transparent 45%),
+               linear-gradient(220deg,#fe330a ,transparent 55%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.wrap input {
+    height: 5vh;
+    width: 30vw;
+    background-color: transparent;
+    color: rgb(98, 96, 96);
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(191, 190, 190);
+}
+
+#footer h1 {
+    font-size: 15vw;
+    color: white;
+    margin-left: 10vh;
+    position: absolute;
+    bottom: 100px;
+}
+
+#footer .foot {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3vw;
+    border-top: 1px solid rgb(98, 96, 96);
+    position: absolute;
+    bottom: 0;
+}
+
+.foot p {
+    font-size: 2vh;
+    margin: 8vh;
+}
