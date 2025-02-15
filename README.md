@@ -1,2 +1,7 @@
 # Sundown
-Sundown website front end design
+Sundown website front end design using - 
+
+HTML
+CSS
+JS
+GSAP
